@@ -15,3 +15,9 @@
   color: $text;
   background-color: $background;
 }
+
+@mixin width-calc($px, $quantity) {
+  width: calc((100% - $px) / $quantity);
+}
+
+// @include название миксина(значение, значение);
