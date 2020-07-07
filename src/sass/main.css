@@ -182,4 +182,34 @@ body {
   padding: 2px 6px;
   border-radius: 2px;
 }
+
+.btn {
+  width: 159px;
+  height: 44px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+}
+
+.btn--frst {
+  background-color: #D41443;
+  color: #fff;
+}
+
+.btn--scnd {
+  background-color: #fff;
+  color: #D41443;
+}
+
+.btn--bold {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+}
+
+.btn--normal {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+}
 /*# sourceMappingURL=main.css.map */

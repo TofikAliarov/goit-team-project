@@ -1,0 +1,23 @@
+@mixin font-line($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height/$font-size;
+}
+
+@mixin sexy-border($color, $width) {
+  border: {
+    color: $color;
+    width: $width;
+    style: solid;
+  }
+}
+
+@mixin colors($text, $background) {
+  color: $text;
+  background-color: $background;
+}
+
+@mixin width-calc($px, $quantity) {
+  width: calc((100% - $px) / $quantity);
+}
+
+// @include название миксина(значение, значение);
