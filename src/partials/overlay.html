@@ -1,3 +1,11 @@
+<!-- Удалю позже, а то они на всю страницу -->
+<style>
+  img { 
+  width: 100px;
+  height: 100px;
+  }
+ </style>
+<!-- ........................................ -->
 <section class="layout-sect">
   <div class="overlay">
 
@@ -28,8 +36,8 @@
       </div>
 
       <div class="header__count-img">
-        <img src="" alt="" class="header__count-first">
-        <img src="" alt="" class="header__count-second">
+        <img src="./images/16.png" alt="" class="header__count-first">
+        <img src="./images/23.png" alt="" class="header__count-second">
       </div>
     </div>
 
@@ -39,7 +47,13 @@
         <ul class="header__block-list">
   
           <li class="header__block-item">
-            <img src="" alt="" class="header__block-img">
+            <img class="header__block-img"
+            srcset="
+            ./images/header-block-img.jpg 1x,
+            ./images/header-block-img@2x.jpg 2x
+            "
+            src="./images/header-block-img.jpg" 
+            alt="Картинка молока">
           </li>
   
           <li class="header__block-item">
@@ -55,12 +69,24 @@
       </div>
 
       <div class="header__pretty-img">
-        <img src="" alt="">
+        <img
+        srcset="
+        ./images/header-pretty-img.jpg 1x,
+        ./images/header-pretty-img@2x.jpg 2x
+        "
+        src="./images/header-pretty-img.jpg" 
+        alt="Картинка девушки">
       </div>
     </div>
 
     <div class="header__main-img">
-      <img src="" alt="">
+      <img
+      srcset="
+      ./images/header-main-img.jpg 1x,
+      ./images/header-main-img@2x.jpg 2x
+      "
+      src="./images/header-main-img.jpg" 
+      alt="Картинка мороженого">
     </div>
 
 
