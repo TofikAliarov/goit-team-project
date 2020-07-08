@@ -1,92 +1,78 @@
 .products__title {
-  text-align: center;
+    text-align: center;
 }
 
 .products__title-text {
-  @include large-text(
-    $color: #ffa5ba,
-    $font-size: 18px,
-    $letter-spacing: 0,
-    $line-height: 1.16
-  );
-  margin-bottom: 144px;
-
-  & .title-text__part {
-    @include large-text(
-      $color: $red,
-      $font-size: 34px,
-      $letter-spacing: 0.04em,
-      $line-height: 1.14
-    );
-    display: block;
-    margin-top: 15px;
-  }
+    @include large-text( $color: #ffa5ba, $font-size: 18px, $letter-spacing: 0, $line-height: 1.16);
+    margin-bottom: 144px;
+    & .title-text__part {
+        @include large-text( $color: $red, $font-size: 34px, $letter-spacing: 0.04em, $line-height: 1.14);
+        display: block;
+        margin-top: 15px;
+    }
 }
 
 .list {
-  text-align: center;
+    text-align: center;
 }
 
 .list__item {
-  position: relative;
-  border-radius: 24px;
-  padding: 160px 40px 40px 40px;
-
-  & + & {
-    margin-top: 130px;
-  }
-
-  &:nth-last-of-type(3) {
-    background-color: $pink;
-  }
-  &:nth-last-of-type(2) {
-    background-color: $sand;
-  }
-  &:nth-last-of-type(1) {
-    background-color: $green;
-  }
+    position: relative;
+    border-radius: 24px;
+    padding: 160px 40px 40px 40px;
+    &+& {
+        margin-top: 130px;
+    }
+    &:nth-last-of-type(3) {
+        background-color: $pink;
+    }
+    &:nth-last-of-type(2) {
+        background-color: $sand;
+    }
+    &:nth-last-of-type(1) {
+        background-color: $green;
+    }
 }
 
 .list__item-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translatey(-45%);
-
-  @media screen and (max-width: 767px) {
-    margin: 0 15px;
-  }
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translatey(-45%);
+    // @media screen and (max-width: 767px) {
+    //   margin: 0 15px;
+    // }
 }
 
 .item-box__picture {
-  height: auto;
+    height: auto;
 }
 
 .list__item-title {
-  @include font-line(20px, 23px);
-  color: $white;
-  letter-spacing: 0.04em;
-  font-family: $title-font;
-  font-weight: 400;
-  margin-bottom: 30px;
+    @include font-line(20px, 23px);
+    color: $white;
+    letter-spacing: 0.04em;
+    font-family: $title-font;
+    font-weight: 400;
+    margin-bottom: 30px;
 }
 
 .list__item-ellipsis {
-  margin-bottom: 30px;
-  fill: $white;
+    margin-bottom: 30px;
+    fill: $white;
 }
 
 .list__item-text {
-  @include font-line(14px, 21px);
-  color: $white;
-  letter-spacing: 0.04em;
-  margin-bottom: 30px;
+    @include font-line(14px, 21px);
+    color: $white;
+    letter-spacing: 0.04em;
+    margin-bottom: 30px;
 }
 
 .list__item-btn {
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50px;
-  padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    padding: 0;
 }

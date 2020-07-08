@@ -115,7 +115,7 @@ q {
 
 img {
     display: block;
-    min-width: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -154,10 +154,10 @@ body {
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 1,9;
+    line-height: 1, 9;
     color: #000000;
 }
-a{
-text-decoration: none;
 
+a {
+    text-decoration: none;
 }
