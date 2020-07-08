@@ -1,0 +1,61 @@
+
+.footer__tagline-secondary {
+    @include large-text;
+}
+.footer__tagline-main {
+    @include large-text ($color:$pink, $font-size:18px, $line-height:1.16, $letter-spacing:0);
+    
+}
+.blocks__item-type {
+    font-weight: 500;
+    line-height: 18.6;
+color: $white;
+letter-spacing: 0.04em;
+}
+.blocks__item-title {
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: $black;
+   
+}
+.blocks__item-adress {
+    font-weight: 500;
+    line-height: 1.5;
+    color: $grey;
+}
+.schedule__item-days {
+    font-weight: 500;
+    line-height: 1.86;
+}
+.schedule__item-time {
+    font-weight: 500;
+    line-height: 1.86;
+    color: $pink;
+}
+.blocks__item-contacts {
+    font-weight: 500;
+    line-height: 1.5;
+    color: $grey;
+}
+.footer__btn-locations {
+    font-size: 16px;
+    line-height: 1.3;
+    color: $white;
+}
+.footer__btn-franchise {
+    font-size: 16px;
+    line-height: 1.3;
+    color: $red;
+}
+.footer__contacts {
+    
+    line-height: 1.86;
+}
+.footer__contacts-tel {
+    line-height: 1.86;
+    color: $red;
+}
+.footer__copyrights {
+    line-height: 1.52;
+    color: $grey;
+}

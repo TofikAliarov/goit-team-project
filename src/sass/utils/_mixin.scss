@@ -21,3 +21,36 @@
 }
 
 // @include название миксина(значение, значение);
+
+
+// @include название миксина(значение, значение);
+@mixin large-text ($color:red, $font-size:36px, $letter-spacing:0.04em, $line-height:1.14) {
+  font-family: Titan One, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size : $font-size;
+line-height: $line-height;
+letter-spacing: $letter-spacing;
+text-transform: uppercase;
+color: $color;
+}
+// значения в скобках () можно изменять  по необходимости. заданные значения остаютс если их не изменить
+
+
+// Mixin для кнопки
+@mixin btn($width, $height, $color, $background, $font-weight, $font-size, $line-height) {
+    width: $width;
+    height: $height;
+
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background-color: $background;
+    color: $color;
+    font-weight: $font-weight;
+    @include font-line($font-size, $line-height);
+}
+
+// @include название миксина(значение, значение);
+

@@ -1,0 +1,74 @@
+// <h2 class="title__text">
+//   <span class="title__text-part">100% natural</span>
+//     products
+// </h2>
+
+// @mixin large-text(
+//   $color: red,
+//   $font-size: 36px,
+//   $letter-spacing: 0.04em,
+//   $line-height: 1.14
+// ) {
+//   font-family: Titan One, sans-serif;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: $font-size;
+//   line-height: $line-height;
+//   letter-spacing: $letter-spacing;
+//   text-transform: uppercase;
+//   color: $color;
+// }
+
+// .title__text {
+//   @include large-text($color: $red, 34px, $letter-spacing: 0.04em, $line-height: 1.14
+//   );
+// }
+
+// .title__text-part {
+//   @include large-text(#ffa5ba, 18px, 0, 1.16);
+// }
+
+// @mixin name($color, $background, $font-weight, $font-size, $line-height) {
+//   .btn {
+//     width: 159px;
+//     height: 44px;
+
+//     text-align: center;
+//     border: none;
+//     border-radius: 20px;
+//     background-color: $background;
+//     color: $color;
+//     font-weight: $font-weight;
+//     @include font-line($font-size, $line-height);
+//   }
+// }
+.products__title-text {
+  @include font-line(18px, 21px);
+  color: #ffa5ba;
+  font-family: $title-font;
+  font-style: 400;
+  font-weight: 400;
+}
+
+.title-text__part {
+  @include font-line(34px, 39px);
+  color: $red;
+}
+
+// .item-box__picture {
+//   height: auto;
+// }
+
+.list__item-title {
+  @include font-line(20px, 23px);
+  color: $white;
+  letter-spacing: 0.04em;
+  font-family: $title-font;
+}
+
+.list__item-text {
+  @include font-line(14px, 21px);
+  font-weight: 700;
+  color: $white;
+  letter-spacing: 0.04em;
+}
