@@ -1,0 +1,8 @@
+.section__title-span {
+    @include large-text;
+}
+
+.section__title {
+    @include large-text ($color: $pink, $font-size: 18px, $line-height: 1.16, $letter-spacing: 0);
+    text-align: center;
+}
