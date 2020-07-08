@@ -1,0 +1,21 @@
+.header__btn{
+  @include btn(209px, 44px, $red, $white, 700, 16px, 21px);
+
+  border: 1px solid black;
+}
+
+.nav-list {
+  background-color: $pink;
+}
+
+.nav-list__link {
+  font-family: $main-font;
+  @include font-line(14px, 18px);
+  color: $white;
+  font-weight: 700;
+  text-decoration: none;
+
+  &.is--current {
+    color: $red;
+  }
+}

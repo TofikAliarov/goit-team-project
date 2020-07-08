@@ -1,0 +1,30 @@
+.header__btn-first {
+  @include btn(62px, 24px, $white, $red, 400, 8px, 10px);
+}
+
+.header__btn-second {
+  @include btn(83px, 24px, $red, $white, 400, 8px, 10px);
+}
+
+.overlay{
+   background-color: $pink;
+}
+
+.header__block-text {
+  font-weight: 400;
+  @include font-line(8px, 12px);
+  color: $white;
+}
+
+.header__box-title{
+  font-family: $title-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  @include font-line(38px, 44px);
+  letter-spacing: 0.04em;
+  color: $white;
+  &-part {
+    @include font-line(58px, 66px);
+    color: $red;
+    }
+}

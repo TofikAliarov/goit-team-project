@@ -183,6 +183,7 @@ body {
   border-radius: 2px;
 }
 
+
 .footer__tagline-secondary {
   font-family: Titan One, sans-serif;
   font-style: normal;
@@ -265,5 +266,54 @@ body {
 .footer__copyrights {
   line-height: 1.52;
   color: #907E82;
+
+.btn {
+  width: 159px;
+  height: 44px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+}
+
+.btn--frst {
+  background-color: #D41443;
+  color: #fff;
+}
+
+.btn--scnd {
+  background-color: #fff;
+  color: #D41443;
+}
+
+.btn--bold {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+}
+
+.btn--normal {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+}
+
+.blog-text, .blog__title {
+  font-family: DM Sans, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: none;
+  text-align: center;
+  color: #000000;
+}
+
+.blog-text {
+  font-size: 12px;
+  line-height: 2.55;
+}
+
+.blog__title {
+  font-size: 14px;
+  line-height: 1.86;
+
 }
 /*# sourceMappingURL=main.css.map */

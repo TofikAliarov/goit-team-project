@@ -7,6 +7,13 @@
 @import "./utils/variables";
 @import "./utils/base";
 @import "./utils/mixin";
-@import './example';
+
+@import "./layouts/about";
+@import './layouts/blog';
+@import './layouts/page-header';
+@import './layouts/overlay';
 @import "./layouts/footer";
+@import './example';
+@import './components/btn/btn';
+@import './components/section/section';
 

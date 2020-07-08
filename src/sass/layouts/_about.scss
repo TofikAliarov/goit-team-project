@@ -1,0 +1,20 @@
+.descriptoin__text {
+    &-item {
+        @include font-line(12px, 19px);
+        font-weight: 500;
+        line-height: 19px;
+    }
+}
+
+.item--grey {
+    color: $grey;
+}
+
+.cards__item-title {
+    line-height: 41px;
+    font-size: 36px;
+}
+
+.cards__item-text {
+    line-height: 20px;
+}
