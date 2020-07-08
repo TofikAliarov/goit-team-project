@@ -1,8 +1,12 @@
 .section__title-span {
-    @include large-text;
+    @include large-text( $color: $red, $font-size: 34px, $letter-spacing: 0.04em, $line-height: 1.14);
+    display: block;
+    margin-bottom: 26px;
+    margin-top: 16px;
 }
 
 .section__title {
-    @include large-text ($color: $pink, $font-size: 18px, $line-height: 1.16, $letter-spacing: 0);
+    @include large-text( $color: #ffa5ba, $font-size: 18px, $letter-spacing: 0, $line-height: 1.16);
     text-align: center;
+    margin-top: 125px;
 }

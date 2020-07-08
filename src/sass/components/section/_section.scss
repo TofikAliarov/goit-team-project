@@ -1,23 +1,26 @@
-.container {
-    max-width: 490px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
-
-.header, .layout-overlay {
-    background-color: $pink;
-}
-
-.container-about {
-    padding-top: 125px;
-    padding-bottom: 145px;
-}
-
-.layout-about,
-.footer {
-    @media screen and (max-width:767px) {
-        height: 502px;
-      }
-    background-color: #FFF5F6;
-    ;
-}
+    .container {
+        max-width: 490px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    
+    .header,
+    .layout-overlay {
+        background-color: $pink;
+    }
+    
+    .container-about {
+        padding-top: 125px;
+        padding-bottom: 145px;
+    }
+    
+    .layout-about,
+    .footer {
+        background-color: #FFF5F6;
+    }
+    
+    .footer {
+        @media screen and (max-width: 767px) {
+            height: 502px;
+        }
+    }
