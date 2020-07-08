@@ -1,16 +1,18 @@
 .container {
-    max-width: 320px;
+    max-width: 490px;
     padding: 0 20px;
     margin: 0 auto;
 }
 
-.header,
-.layout-overlay {
+.header, .layout-overlay {
     background-color: $pink;
 }
 
 .layout-about,
 .footer {
+    @media screen and (max-width:767px) {
+        height: 502px;
+      }
     background-color: #FFF5F6;
     ;
 }

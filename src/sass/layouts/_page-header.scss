@@ -1,21 +1,100 @@
-.header__btn{
-  @include btn(209px, 44px, $red, $white, 700, 16px, 21px);
+.header-container{
+  position: relative;
+  z-index: 3;
+}
 
-  border: 1px solid black;
+.logo{
+  margin-right: auto;
+
+  &__svg{
+    max-width: 199px;
+    max-height: 50px;
+  }
+}
+
+.header__list{
+  display: flex;
+  align-items: center;
+
+  padding-top: 6px;
+}
+
+.menu-container{
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 502px;
+  background-color: $dark-pink;
+  transition: opacity 0.5s linear;
+}
+
+.menu-container.is-open {
+  opacity: 1;
+}
+
+.burger--btn{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  border: none;
+  background-color: transparent;
+
+  &-close {
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+  }
+}
+
+.header__btn {
+  @include btn(209px, 44px, $red, $white, 700, 16px, 21px);
+  margin: 23px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__btn::after {
+  content: "";
+  background-image: url(../images/btn-icon.svg);
+  display: block;
+  margin-left: 16px;
+  height: 10px;
+  width: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .nav-list {
-  background-color: $pink;
-}
+  margin-top: 19px;
 
-.nav-list__link {
-  font-family: $main-font;
-  @include font-line(14px, 18px);
-  color: $white;
-  font-weight: 700;
-  text-decoration: none;
+  &__item {
+    padding: 11px 0;
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
+  }
+
+  &__link {
+    padding: 0 20px;
+    font-family: $main-font;
+    @include font-line(14px, 18px);
+    color: $white;
+    font-weight: 700;
+    text-decoration: none;
 
   &.is--current {
     color: $red;
+  }
   }
 }

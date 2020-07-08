@@ -1,5 +1,5 @@
 <header class="header">
-    <div class="container">
+    <div class="header-container container">
         <ul class="header__list">
 
             <li class="header__list-item logo">
@@ -9,7 +9,17 @@
             </li>
 
             <li class="header__list-item">
-                <div class="menu-container">
+                <div class="menu-container"
+                id="menu-container" 
+                data-menu>
+                    <button type="button" class="burger--btn-close" aria-expanded="false" data-menu-button-cl>
+                        <svg aria-label="Переключатель мобильного меню">
+                            <use class="icon-cross" xlink:href="./images/sprite.svg#icon-close-menu"></use>
+                        </svg>
+                    </button> 
+                    <button type="button" class="header__btn">
+                        Buy now
+                    </button>
                     <nav class="nav">
                         <ul class="nav-list">
                             <li class="nav-list__item">
@@ -38,23 +48,16 @@
                                 </a>
                             </li>
                         </ul>
-                    </nav>
+                    </nav>                  
                 </div>
             </li>
 
             <li class="header__list-item">
                 <button type="button" class="burger--btn" aria-expanded="false" data-menu-button>
-        <svg aria-label="Переключатель мобильного меню">
-          <use class="icon-menu" xlink:href="./images/sprite.svg#icon-burger-menu"></use>
-          <use class="icon-cross" xlink:href="./images/sprite.svg#icon-close-menu"></use>
-        </svg>
-        </button>
-            </li>
-
-            <li class="header__list-item">
-                <button type="button" class="header__btn">
-          Buy now
-        </button>
+                    <svg aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" xlink:href="./images/sprite.svg#icon-burger-menu"></use>
+                    </svg>
+                </button>
             </li>
         </ul>
 
