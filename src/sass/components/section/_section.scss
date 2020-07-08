@@ -9,6 +9,15 @@
     background-color: $pink;
 }
 
+.container-about {
+    padding-top: 125px;
+    padding-bottom: 145px;
+    background-image: url(../images/info-bcg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .layout-about,
 .footer {
     background-color: #FFF5F6;
