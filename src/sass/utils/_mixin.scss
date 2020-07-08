@@ -24,7 +24,7 @@
 
 
 // @include название миксина(значение, значение);
-@mixin large-text ($color:red, $font-size:36px, $letter-spacing:0.04em, $line-height:1.14) {
+@mixin large-text ($color:$red, $font-size:36px, $letter-spacing:0.04em, $line-height:1.14) {
   font-family: Titan One, sans-serif;
 font-style: normal;
 font-weight: normal;

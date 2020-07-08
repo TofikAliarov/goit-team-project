@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+
 <footer class="footer">
     <section class="layout">
         <div class="container">
             <ul class="blocks">
                 <li class="blocks__item">
-                    <p class="blocks__item-type">CAFE</p>
+                    <p class="blocks__item-type">Cafe</p>
                     <div class="blocks__item-city">
                         <h3 class="blocks__item-title">Chicago</h3>
                         <address class="blocks__item-adress">Fusce ut velit laoreet, tempus arcu molestie vulputate</address>
@@ -32,15 +22,18 @@
 
 
                     <div class="blocks__item-contacts">
-                        <a href="tel:+610383766284" class="blocks__item-tel">+61(0) 383 766 284</a>
-                        <a class="blocks__item-email" href="mailto:noreply@envato.com">noreply@envato.com</a>
+                        <ul class="blocks__contacts">
+                            <li><a href="tel:+610383766284" class="blocks__item-tel">+61(0) 383 766 284</a></li>
+                            <li><a class="blocks__item-email" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+                        </ul>
                     </div>
                 </li>
                 <li class="blocks__item">
-                    <p class="blocks__item-type">FOOD TRUCK</p>
+                    <p class="blocks__item-type blocks__item-type-truck">FOODTRUCK</p>
                     <div class="blocks__item-city">
                         <h3 class="blocks__item-title">Los Angeles</h3>
-                        <address class="blocks__item-adress">Fusce ut velit laoreet, tempus arcu molestie vulputate</address>
+                        <address class="blocks__item-adress">Fusce ut velit laoreet, tempus
+                             arcu molestie vulputate</address>
                     </div>
                     <ul class="schedule">
                         <li class="schedule__item">
@@ -54,13 +47,15 @@
                     </ul>
 
                     <div class="blocks__item-contacts">
-                        <a href="tel:+610383766284" class="blocks__item-tel">+61(0) 383 766 284</a>
-                        <a class="blocks__item-email" href="mailto:noreply@envato.com">noreply@envato.com</a>
+                        <ul class="blocks__contacts">
+                        <li><a href="tel:+610383766284" class="blocks__item-tel">+61(0) 383 766 284</a></li>
+                        <li><a class="blocks__item-email" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+                    </ul>
                     </div>
-                </li>
+                </li> 
 
                 <li class="blocks__item">
-                    <p class="  ">CAFE</p>
+                    <p class="blocks__item-type">CAFE</p>
                     <div class="blocks__item-city">
                         <h3 class="blocks__item-title">New York</h3>
                         <address class="blocks__item-adress">Fusce ut velit laoreet, tempus arcu molestie vulputate</address>
@@ -77,18 +72,26 @@
                     </ul>
 
                     <div class="blocks__item-contacts">
-                        <a href="tel:+610383766284" class="blocks__item-tel">+610383766284</a>
-                        <a class="blocks__item-email" href="mailto:noreply@envato.com">noreply@envato.com</a>
+                        <ul class="blocks__contacts">
+                            <li><a href="tel:+610383766284" class="blocks__item-tel">+61(0) 383 766 284</a></li>
+                            <li><a class="blocks__item-email" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+                        </ul>
                     </div>
                 </li>
             </ul>
 
-            <button class="btn btn--frst btn--normal">Our locations</button>
-            <button class="btn btn--scnd btn--normal">Franchise</button>
+           <div class="footer__buttons"> <button class="footer__btn-locations"><span class="footer__francise">francise</span>
+            <svg class="footer__arrow-reverse">
+                <use href="./images/sprite.svg#icon-button-arrow"></use></svg></button>
+            <button class="footer__btn-franchise"><span class="footer__francise">francise</span>
+                <svg class="footer__arrow">
+                    <use href="./images/sprite.svg#icon-button-arrow"></use></svg></button></div>
             <div class="footer__tagline">
-                <b class="footer__tagline-main">homemade ice cream made</b>
+                <b class="footer__tagline-main">homemade ice cream 
+                    made</b>
                 <b class="footer__tagline-secondary">with passion</b>
             </div>
+            <div class="footer__social">
             <ul class="social__list">
                 <li class="social__list-item">
                     <a href="social__link" aria-label="Ссылка на Git-Hub" class="footer__social-link">
@@ -106,12 +109,15 @@
                       <use href="./images/sprite.svg#icon-facebook"></use></svg></a>
                 </li>
             </ul>
+        </div>
             <p class="footer__contacts">
                 Feel free to contact <a href="tel+610383766284" class="footer__contacts-tel">+61 (0) 383 766 284</a>
             </p>
-            <div class="copyrights">
-                <p class="footer__copyrights">© 2019 - IceCream. All Rights Reserved.</p>
-            </div>
+           
+        </div>
+        <div class="copyrights">
+            <p class="copyrights__text">© 2019 - IceCream. 
+                All Rights Reserved.</p>
         </div>
     </section>
 </footer>
