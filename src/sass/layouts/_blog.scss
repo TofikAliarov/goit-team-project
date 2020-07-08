@@ -1,1 +1,5 @@
-@import '../components/blog-text';
+@import './components/blog/blog-contain';
+@import './components/blog/blog-image';
+@import '../components/blog/blog-card';
+@import '../components/blog/blog-text';
+@import '../components/blog/blog-selector';
