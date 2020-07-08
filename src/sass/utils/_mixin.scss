@@ -20,4 +20,20 @@
   width: calc((100% - $px) / $quantity);
 }
 
+
+// Mixin для кнопки
+@mixin btn($width, $height, $color, $background, $font-weight, $font-size, $line-height) {
+    width: $width;
+    height: $height;
+
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background-color: $background;
+    color: $color;
+    font-weight: $font-weight;
+    @include font-line($font-size, $line-height);
+}
+
 // @include название миксина(значение, значение);
