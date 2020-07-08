@@ -1,0 +1,26 @@
+.footer__tagline-secondary {
+    @include large-text;
+}
+.footer__tagline-main {
+    @include large-text ($color:$pink, $font-size:18px, $line-height:1.16, $letter-spacing:0);
+    
+}
+.blocks__item-type {
+    line-height: 18.6;
+color: $white;
+letter-spacing: 0.04em;
+}
+.blocks__item-title {
+    letter-spacing: 0.04em;
+}
+.blocks__item-adress {
+    line-height: 1.5;
+    color: $grey;
+}
+.schedule__item-days {
+    line-height: 1.86;
+}
+.schedule__item-time {
+    line-height: 1.86;
+    color: $pink;
+}
