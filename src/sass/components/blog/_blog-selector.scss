@@ -1,6 +1,5 @@
-
 .select__item {
-    display: none;
+	display: none;
 }
 
 .controls {
@@ -9,6 +8,15 @@
 	display: flex;
 	top: 528px;
 	left: 86px;
+
+	@media screen and (min-width: 768px) {
+		top: 370px;
+		left: 256px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		left: 409px;
+	}
 }
 
 .control__item {
@@ -19,15 +27,19 @@
 	background: #d9d9d9;
 	border-radius: 50%;
 	margin-left: 18px;
+	transition: 300ms ease-in;
 }
 
 .control__item-main {
 	cursor: pointer;
 	display: block;
 	background-image: url(../images/selector.svg);
-	width: 12.84px;
-	height: 12px;
+	background-repeat: no-repeat;
+	filter: invert(0.8);
+	width: 12.4px;
+	height: 11.9px;
 	margin-left: 18px;
+	transition: 500ms ease-in;
 }
 
 #select__item-1:checked ~ .blog__block {
@@ -43,17 +55,17 @@
 }
 
 #select__item-1:checked ~ .controls .control__item-main {
-	transform: scale(1.35);
+	transform: scale(1.3);
+	filter: invert(18%) sepia(94%) saturate(3182%) hue-rotate(334deg) brightness(82%) contrast(102%);
 }
 
 #select__item-2:checked ~ .controls .item-2,
 #select__item-3:checked ~ .controls .item-3 {
-	background: #d31342;
 	transform: scale(1.25);
+	background: #d31342;
 }
 
-
-
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1200px) {}
+#select__item-2:hover ~ .controls .item-2,
+#select__item-3:hover ~ .controls .item-3 {
+	background: #d31342;
+}
