@@ -1,9 +1,10 @@
 .blog-container {
-  width: 320px;
-  padding: 0;
-  overflow: hidden;
+	width: 320px;
+	padding: 0;
+	overflow: hidden;
 }
 
 .blog__block {
-  display: flex;
+	position: relative;
+	display: flex;
 }
