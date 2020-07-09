@@ -1,51 +1,49 @@
 .select {
-    margin-bottom: 212px;
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .select__item {
-	display: none;
+    display: none;
 }
 
 .controls {
-	position: absolute;
-	display: flex;
-	top: 542px;
-	left: 86px;
+    position: absolute;
+    display: flex;
+    top: 542px;
+    left: 86px;
 }
 
 .control__item {
-	cursor: pointer;
-	display: block;
-	width: 12px;
-	height: 12px;
-	background: #d9d9d9;
-	border-radius: 50%;
-	margin-left: 18px;
-	// &:hover {
-	// 	transform: scale(1.2);
-	// }
-	// &:active {
-	// 	background: #d31342;
-	// 	transform: scale(1.35);
-	// }
+    cursor: pointer;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-left: 18px;
+    // &:hover {
+    // 	transform: scale(1.2);
+    // }
+    // &:active {
+    // 	background: #d31342;
+    // 	transform: scale(1.35);
+    // }
 }
 
 .control__item-main {
-	cursor: pointer;
-	display: block;
-	background-image: url(../images/selector.svg);
-	width: 12.84px;
-	height: 12px;
-	margin-left: 18px;
-	&:hover {
-		transform: scale(1.35);
-	}
-	&:active {
-		transform: scale(1.55);
-	}
-
+    cursor: pointer;
+    display: block;
+    background-image: url(../images/selector.svg);
+    width: 12.84px;
+    height: 12px;
+    margin-left: 18px;
+    &:hover {
+        transform: scale(1.35);
+    }
+    &:active {
+        transform: scale(1.55);
+    }
 }
 
 @media screen and (min-width: 768px) {}
