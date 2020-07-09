@@ -1,23 +1,24 @@
+
 .header-container{
   // position: relative;
   z-index: 1;
+
 }
 
-.logo{
-  margin-right: auto;
-
-  &__svg{
-    max-width: 199px;
-    max-height: 50px;
-  }
+.logo {
+    margin-right: auto;
+    &__svg {
+        max-width: 199px;
+        max-height: 50px;
+    }
 }
 
-.header__list{
-  display: flex;
-  align-items: center;
-
-  padding-top: 6px;
+.header__list {
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
 }
+
 
 .menu-container{
   pointer-events: none;
@@ -35,51 +36,54 @@
 .menu-container.is-open {
   opacity: 1;
   pointer-events: visible;
+
 }
 
-.burger--btn{
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  display: flex;
-  border: none;
-  background-color: transparent;
-
-  &-close {
-    margin-top: 10px;
-    margin-right: 20px;
+.burger--btn {
     width: 40px;
     height: 40px;
     cursor: pointer;
     display: flex;
     border: none;
     background-color: transparent;
-    margin-left: auto;
-  }
+    &-close {
+        margin-top: 10px;
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        border: none;
+        background-color: transparent;
+        margin-left: auto;
+    }
 }
 
 .header__btn {
+
   @include btn(209px, 44px, $red, $white, 700, 16px, 21px);
   margin-top: 23px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .header__btn::after {
-  content: "";
-  background-image: url(../images/btn-icon.svg);
-  display: block;
-  margin-left: 16px;
-  height: 10px;
-  width: 8px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    content: "";
+    background-image: url(../images/btn-icon.svg);
+    display: block;
+    margin-left: 16px;
+    height: 10px;
+    width: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .nav-list {
+
   margin-top: 19px;
 
   &__item {
@@ -96,8 +100,7 @@
     font-weight: 700;
     text-decoration: none;
 
-  &.is--current {
-    color: $red;
-  }
-  }
-}
+@media screen and (min-width: 768px) {}
+
+
+@media screen and (min-width: 1200px) {}
