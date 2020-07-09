@@ -88,34 +88,52 @@ width: 130px;}
     color: $grey;
 }
 
-.footer__btn-locations {
-    margin-top: 1291px;
-    margin-bottom: 10px;
-    @include btn ($width:161px, $height:44px, $color:$white, $font-weight:bold, $background:$red, $font-size:16px, $line-height:21px)
-    
-
-    }
-
-.footer__btn-franchise {
-    @include btn ($width:161px, $height:44px, $color:$red, $font-weight:bold, $background:$white, $font-size:16px, $line-height:21px)
-    
-}
 .footer__buttons {
     display: flex;
     flex-direction: column;
    align-items: center;
    margin-bottom: 113px;
 }
-.footer__arrow {
-    width: 4.28px;
-    height: 8px;
-}
-.footer__arrow-reverse {
-    width: 4.28px;
-    height: 8px;
-   fill: $white;
+
+.footer__btn-franchise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include btn ($width:161px, $height:44px, $color:$red, $font-weight:bold, $background:$white, $font-size:16px, $line-height:21px);
+
+    &::after {
+        content: "";
+        background-image: url(../images/btn-icon.svg);
+        display: block;
+        margin-left: 16px;
+        height: 10px;
+        width: 8px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
+.footer__btn-locations {
+    margin-top: 1291px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include btn ($width:161px, $height:44px, $color:$white, $font-weight:bold, $background:$red, $font-size:16px, $line-height:21px);
+
+    &::after {
+        content: "";
+        background-image: url(../images/btn-icon-wt.svg);
+        display: block;
+        margin-left: 16px;
+        height: 10px;
+        width: 8px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
 .footer__tagline {
     display: flex;
     flex-direction: column;

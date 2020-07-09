@@ -47,6 +47,7 @@ color: $color;
     background-color: $background;
     color: $color;
     font-weight: $font-weight;
+    font-family: $main-font;
     @include font-line($font-size, $line-height);
 }
 
