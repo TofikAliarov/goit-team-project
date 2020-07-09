@@ -106,6 +106,16 @@ width: 130px;}
    align-items: center;
    margin-bottom: 113px;
 }
+.footer__arrow {
+    width: 4.28px;
+    height: 8px;
+}
+.footer__arrow-reverse {
+    width: 4.28px;
+    height: 8px;
+   fill: $white;
+}
+
 .footer__tagline {
     display: flex;
     flex-direction: column;
