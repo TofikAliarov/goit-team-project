@@ -1,12 +1,17 @@
-
 .layout__image-blog {
-	max-width: 500px;
+	max-width: 780px;
 	margin-right: -18px;
-
 	margin-bottom: 80px;
 
+	@media screen and (min-width: 768px) {
+		max-width: 1200px;
+		margin-right: -9px;
+		margin-bottom: 121px;
+
+		@media screen and (min-width: 1280px) {
+			max-width: 1920px;
+			margin-right: 0;
+			margin-bottom: 123px;
+		}
+	}
 }
-
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1200px) {}

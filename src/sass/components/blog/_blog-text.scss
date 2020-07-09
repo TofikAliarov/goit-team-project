@@ -1,22 +1,33 @@
 %text {
-    font-family: DM Sans, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    text-transform: none;
-    text-align: center;
-    color: #000000;
+	font-family: DM Sans, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: none;
+	text-align: center;
+	color: #000000;
 }
 
 .blog__text {
-    @extend %text;
-    @include font-line(12px, 31px);
+	@extend %text;
+	@include font-line(12px, 31px);
+
+	@media screen and (min-width: 768px) {
+		@include font-line(14px, 30px);
+		letter-spacing: 0.04em;
+	}
+	@media screen and (min-width: 1280px) {
+		@include font-line(16px, 30px);
+	}
 }
 
 .blog__title {
-    @extend %text;
-    @include font-line(14px, 26px);
+	@extend %text;
+	@include font-line(14px, 26px);
+
+	@media screen and (min-width: 768px) {
+		@include font-line(16px, 30px);
+	}
+	@media screen and (min-width: 1280px) {
+		@include font-line(20px, 37px);
+	}
 }
-
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1200px) {}

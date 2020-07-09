@@ -1,4 +1,5 @@
 
+
 .header-container{
   z-index: 1;
 
@@ -33,6 +34,7 @@
       padding-top: 37px;
     }
 
+
 }
 
 @media screen and (max-width: 1279px) {
@@ -58,6 +60,7 @@
 }}
 
 .menu-container.is-open {
+
 
   opacity: 1;
   transition: opacity 0.5s linear;
@@ -168,10 +171,29 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
 }
 
 @media screen and (max-width: 1279px) {
 .nav-list {
+	margin-top: 19px;
+
+	&__item {
+		padding: 20px 0;
+		border-top: 1px solid $border;
+		border-bottom: 1px solid $border;
+	}
+
+	&__link {
+		padding: 0 30px;
+		font-family: $main-font;
+		@include font-line(20px, 26px);
+		color: $white;
+		font-weight: 700;
+		text-decoration: none;
+	}
+}
+
 
 
   margin-top: 19px;
@@ -201,6 +223,7 @@
   }
   }
 }
+
 
 
 
