@@ -11,7 +11,7 @@
     
     .container-about {
         padding-top: 125px;
-        padding-bottom: 145px;
+        padding-bottom: 97px;
     }
     
     .layout-about,
@@ -22,5 +22,22 @@
     .footer {
         @media screen and (max-width: 767px) {
             height: 502px;
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        .container {
+            width: 490px;
+            padding: 0 34px;
+        }
+        .container-about {
+            padding-bottom: 139px;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .container {
+            width: 490px;
+            padding: 0 115px;
         }
     }

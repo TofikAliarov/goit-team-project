@@ -1,5 +1,9 @@
 .select {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 212px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 212px;
 }
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1200px) {}
