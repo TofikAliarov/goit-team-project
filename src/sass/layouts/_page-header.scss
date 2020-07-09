@@ -1,8 +1,6 @@
-
-.header-container{
-  // position: relative;
-  z-index: 1;
-
+.header-container {
+    // position: relative;
+    z-index: 1;
 }
 
 .logo {
@@ -19,24 +17,22 @@
     padding-top: 6px;
 }
 
-
-.menu-container{
-  pointer-events: none;
-  opacity: 0;
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 502px;
-  background-color: $dark-pink;
-  transition: opacity 0.5s linear;
+.menu-container {
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 502px;
+    background-color: $dark-pink;
+    transition: opacity 0.5s linear;
 }
 
 .menu-container.is-open {
-  opacity: 1;
-  pointer-events: visible;
-
+    opacity: 1;
+    pointer-events: visible;
 }
 
 .burger--btn {
@@ -60,14 +56,12 @@
 }
 
 .header__btn {
-
-  @include btn(209px, 44px, $red, $white, 700, 16px, 21px);
-  margin-top: 23px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+    @include btn(209px, 44px, $red, $white, 700, 16px, 21px);
+    margin-top: 23px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__btn::after {
@@ -83,24 +77,22 @@
 }
 
 .nav-list {
-
-  margin-top: 19px;
-
-  &__item {
-    padding: 20px 0;
-    border-top: 1px solid $border;
-    border-bottom: 1px solid $border;
-  }
-
-  &__link {
-    padding: 0 30px;
-    font-family: $main-font;
-    @include font-line(20px, 26px);
-    color: $white;
-    font-weight: 700;
-    text-decoration: none;
+    margin-top: 19px;
+    &__item {
+        padding: 20px 0;
+        border-top: 1px solid $border;
+        border-bottom: 1px solid $border;
+    }
+    &__link {
+        padding: 0 30px;
+        font-family: $main-font;
+        @include font-line(20px, 26px);
+        color: $white;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
 
 @media screen and (min-width: 768px) {}
-
 
 @media screen and (min-width: 1200px) {}
