@@ -49,6 +49,7 @@
     height: 100%;
     max-width: 280px;
     width: 100%;
+    object-fit: contain;
 }
 
 .descriptoin__text {
@@ -91,3 +92,7 @@
     width: 44px;
     height: 50px;
 }
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1200px) {}
