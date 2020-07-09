@@ -8,5 +8,24 @@
 .section__title {
     @include large-text( $color: #ffa5ba, $font-size: 18px, $letter-spacing: 0, $line-height: 1.16);
     text-align: center;
-    margin-top: 125px;
+}
+
+@media screen and (min-width: 768px) {
+    .section__title-span {
+        @include large-text( $color: $red, $font-size: 48px, $letter-spacing: 0.04em, $line-height: 1.14);
+        margin-bottom: 50px;
+    }
+    .section__title {
+        @include large-text( $color: #ffa5ba, $font-size: 26px, $letter-spacing: 0, $line-height: 1.16);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section__title-span {
+        @include large-text( $color: $red, $font-size: 58px, $letter-spacing: 0.04em, $line-height: 1.14);
+        margin-bottom: 50px;
+    }
+    .section__title {
+        @include large-text( $color: #ffa5ba, $font-size: 30px, $letter-spacing: 0, $line-height: 1.16);
+    }
 }

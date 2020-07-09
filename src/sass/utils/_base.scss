@@ -156,8 +156,16 @@ body {
     font-size: 12px;
     line-height: 1, 9;
     color: #000000;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 28px;
+    }
 }

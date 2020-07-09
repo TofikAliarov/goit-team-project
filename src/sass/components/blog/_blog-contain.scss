@@ -1,7 +1,7 @@
 .blog-container {
-	width: 320px;
-	padding: 0;
-	overflow: hidden;
+    width: 320px;
+    padding: 0;
+    overflow: hidden;
 }
 
 .blog__block {
@@ -14,3 +14,7 @@
 .blog {
 	position: relative;
 }
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1200px) {}
