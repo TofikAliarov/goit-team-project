@@ -1,30 +1,84 @@
+.layout-overlay {
+    height: 446px;
+}
+
+.overlay.container {
+    position: relative;
+}
+
+.overlay__sector-one {
+    position: absolute;
+    top: 137px;
+    z-index: 2;
+}
+
 .header__btn-first {
-  @include btn(62px, 24px, $white, $red, 400, 8px, 10px);
+    @include btn(62px, 24px, $white, $red, 400, 8px, 10px);
 }
 
 .header__btn-second {
-  @include btn(83px, 24px, $red, $white, 400, 8px, 10px);
-}
-
-.overlay{
-   background-color: $pink;
+    @include btn(83px, 24px, $red, $white, 400, 8px, 10px);
 }
 
 .header__block-text {
-  font-weight: 400;
-  @include font-line(8px, 12px);
-  color: $white;
+    font-weight: 400;
+    @include font-line(8px, 12px);
+    color: $white;
 }
 
-.header__box-title{
-  font-family: $title-font;
-  font-weight: 400;
-  text-transform: uppercase;
-  @include font-line(38px, 44px);
-  letter-spacing: 0.04em;
-  color: $white;
-  &-part {
-    @include font-line(58px, 66px);
-    color: $red;
+.header__box-title {
+    display: inline-block;
+    font-family: $title-font;
+    font-weight: 400;
+    text-transform: uppercase;
+    @include font-line(26px, 30px);
+    letter-spacing: 0.04em;
+    color: $white;
+    &-part {
+        display: inline-block;
+        @include font-line(48px, 46.32px);
+        color: $red;
     }
+}
+
+.header__box {
+    max-width: 218px;
+    max-height: 107px;
+    &-container {
+        padding-top: 19px;
+    }
+    &-list {
+        display: flex;
+        margin: 0 -4px;
+    }
+    &-btn {
+        margin: 0 4px;
+    }
+}
+
+.header__count-img {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.overlay__sector-two {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.header__main-img {
+    position: absolute;
+    overflow: hidden;
+    top: 27px;
+    left: 36px;
+    z-index: 1;
+    min-width: 100%;
+}
+
+.header__png {
+    object-fit: contain;
+    height: 419px;
+    width: auto;
 }

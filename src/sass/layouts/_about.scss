@@ -58,7 +58,21 @@
     }
 }
 
-.descriptoin__button-svg {
+.about__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 113px;
+}
+
+.button {
+    @include btn ($width: 161px, $height: 44px, $color: $red, $font-weight: bold, $background: $white, $font-size: 16px, $line-height: 21px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-svg {
     width: 4.5px;
     height: 8px;
 }
