@@ -49,6 +49,7 @@
     height: 100%;
     max-width: 280px;
     width: 100%;
+    object-fit: contain;
 }
 
 .descriptoin__text {
@@ -91,3 +92,86 @@
     width: 44px;
     height: 50px;
 }
+
+@media screen and (min-width: 768px) {
+    .descriptoin__text {
+        position: relative;
+        &-item {
+            @include font-line(14px, 25px);
+            font-weight: 500;
+            line-height: 25px;
+        }
+    }
+    .descriptoin__text-bacground {
+        display: none;
+    }
+    .descriptoin__text-img {
+        width: calc(100% + 40px);
+        z-index: 0;
+    }
+    .item--grey {
+        color: $grey;
+    }
+    .item-text {
+        margin-top: 20px;
+    }
+    .cards__item-title {
+        line-height: 41px;
+        font-size: 36px;
+    }
+    .cards__item-text {
+        line-height: 20px;
+    }
+    .descriptoin {
+        display: flex;
+    }
+    .descriptoin__img {
+        padding: 0 26px;
+        width: 100%;
+        height: 279px;
+        display: flex;
+        justify-content: center;
+    }
+    .descriptoin__img-img {
+        height: 100%;
+        max-width: 280px;
+        width: 100%;
+        object-fit: contain;
+    }
+    .descriptoin__text {
+        padding: 0 30px;
+        &-item {
+            padding: 23px 0;
+        }
+    }
+    .about__btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 113px;
+    }
+    .button {
+        @include btn ($width: 161px, $height: 44px, $color: $red, $font-weight: bold, $background: $white, $font-size: 16px, $line-height: 21px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .button-svg {
+        width: 4.5px;
+        height: 8px;
+    }
+    .cards__item-svg.svg--first {
+        width: 33px;
+        height: 50px;
+    }
+    .cards__item-svg.svg--second {
+        width: 50px;
+        height: 50px;
+    }
+    .cards__item-svg.svg--third {
+        width: 44px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 1200px) {}
