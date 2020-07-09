@@ -1,15 +1,35 @@
 .layout-overlay {
     height: 446px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        height: 312px;
+    }
 }
 
 .overlay.container {
-    position: relative;
+    @media screen and (max-width: 767px) {
+        position: relative;
+    }
 }
 
 .overlay__sector-one {
-    position: absolute;
-    top: 137px;
-    z-index: 2;
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        top: 137px;
+        z-index: 2;
+    }
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.overlay__sector-two {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    display: flex;
+    justify-content: space-between;
+
+
 }
 
 .header__btn-first {
@@ -56,31 +76,41 @@
     }
 }
 
+.header__block-img {
+    width: 124px;
+    height: 126px;
+}
+
 .header__count-img {
     @media screen and (max-width: 767px) {
         display: none;
     }
+    display: block;
+    width: 33px;
+    height: 32px;
 }
 
-.overlay__sector-two {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-}
+
 
 .header__main-img {
-    position: absolute;
-    overflow: hidden;
-    top: 27px;
-    left: 36px;
-    z-index: 1;
-    min-width: 100%;
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        overflow: hidden;
+        top: 27px;
+        left: 36px;
+        z-index: 1;
+        min-width: 100%;
+    }
+    
 }
 
 .header__png {
     object-fit: contain;
-    height: 419px;
-    width: auto;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        height: 419px;
+        min-width: 367px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {}
