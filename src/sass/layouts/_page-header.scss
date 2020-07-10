@@ -1,10 +1,14 @@
+.header-container.container {
+  position: static;
+}
 .header-container {
-	z-index: 1;
-	&.container {
-		@media screen and (min-width: 1280px) {
-			padding: 0 97px 0 46px;
-		}
-	}
+
+    &.container {
+        @media screen and (min-width: 1280px) {
+            padding: 0 97px 0 46px;
+        }
+    }
+
 }
 
 .logo {
