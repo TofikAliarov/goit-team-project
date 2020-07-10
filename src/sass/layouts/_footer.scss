@@ -8,19 +8,18 @@
 }
 
 .blocks {
-    position: absolute;
     left: 0;
-    margin-top: -84px;
+    transform: translateY(-84px);
     margin-bottom: 54px;
     margin-right: 30px;
     margin-left: 30px;
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center;
-     
+        transform: translateY(-78px);
         
     @media screen and (min-width: 1280px) {
-       
+        transform: translateY(-102px);
     }
     }}
 
@@ -276,12 +275,12 @@ justify-content: center;}
         background-position: center;
     }
     @media screen and (min-width: 768px) {
-        margin-top: 547px;
+        
     margin-bottom: 165px;
     width: 191px;
     height: 44px;}
     @media screen and (min-width: 1280px){
-        margin-top: 556px;
+       
         width: 180px;
         height: 44px;
       
@@ -291,7 +290,6 @@ justify-content: center;}
 
 
 .footer__btn-locations {
-    margin-top: 1291px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -310,13 +308,11 @@ justify-content: center;}
         background-position: center;
     }
         @media screen and (min-width: 768px) {
-            margin-top: 547px;
             margin-bottom: 165px;
             margin-right: 14.5px;
         width: 191px;
     height: 44px;}
             @media screen and (min-width: 1280px){
-                margin-top: 556px;
                 width: 180px;
                 height: 44px;
             }
@@ -379,7 +375,9 @@ white-space: nowrap;}
 .footer__contacts-tel {
     line-height: 1.86;
     color: $red;
-    
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .social__list {
@@ -403,6 +401,7 @@ margin-bottom: 50px ;
 .footer__link:hover .social__icon,
 .footer__link:focus .social__icon {
   fill: $red;
+  transform: scale(1.1);
 }
 
 .social__icon {
@@ -412,15 +411,15 @@ margin-bottom: 50px ;
     margin-right: 28.24px;
     & :last-child {
         margin-right: 0px;
+        transition: 350ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
     @media screen and (min-width: 1280px) {
         width: 34px;
         height: 34px;
         margin-right: 30px;
     @media screen and (min-width: 1280px) {
-        
+
         margin-right: 31px;
-        transition: 450ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 }}
 .footer__bottom {
