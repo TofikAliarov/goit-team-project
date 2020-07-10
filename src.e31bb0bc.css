@@ -381,7 +381,7 @@ a {
 .list {
   padding-top: 144px;
 }
-.list__item-picture {
+.list__item-box {
   position: absolute;
   top: 0;
   left: 50%;
@@ -437,7 +437,7 @@ a {
     display: flex;
     padding-top: 150px;
   }
-  .list__item-picture {
+  .list__item-box {
     width: 220px;
   }
   .list__item-text {
@@ -462,7 +462,7 @@ a {
   .list {
     padding-top: 259px;
   }
-  .list__item-picture {
+  .list__item-box {
     width: 335px;
     transform: translate(-50%, -62%);
   }
@@ -542,7 +542,6 @@ a {
 }
 
 .blog__card {
-  margin-right: 20px;
   margin-bottom: 212px;
 }
 @media screen and (min-width: 768px) {
@@ -804,11 +803,11 @@ a {
 }
 
 #select__item-2:checked ~ .blog__block {
-  transform: translateX(calc(-100% - 20px));
+  transform: translateX(-100%);
 }
 
 #select__item-3:checked ~ .blog__block {
-  transform: translateX(calc(-200% - 40px));
+  transform: translateX(-200%);
 }
 
 #select__item-1:checked ~ .controls .control__item-main {
@@ -836,32 +835,37 @@ a {
   position: static;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .header-container.container {
+    padding-top: 6px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-container.container {
+    padding-top: 37px;
+  }
+}
 @media screen and (min-width: 1280px) {
   .header-container.container {
-    padding: 0 97px 0 46px;
+    padding-left: 46px;
+    padding-right: 97px;
   }
 }
 
 @media screen and (max-width: 1279px) {
-  .logo {
+  .logo__link {
     margin-right: auto;
   }
 }
+
 .logo__svg {
   max-width: 199px;
   max-height: 50px;
-}
-
-.header__list {
-  display: flex;
-  align-items: center;
-  padding-top: 6px;
-  justify-content: space-between;
-}
-@media screen and (min-width: 768px) {
-  .header__list {
-    padding-top: 37px;
-  }
 }
 
 @media screen and (max-width: 1279px) {
@@ -879,12 +883,8 @@ a {
 }
 @media screen and (max-width: 1279px) and (min-width: 768px) {
   .menu-container {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 1279px) and (min-width: 768px) {
-  .menu-container {
-    height: 399px;
+    width: 40%;
+    height: 1020px;
   }
 }
 .menu-container.is-open {
@@ -894,6 +894,9 @@ a {
 }
 
 @media screen and (min-width: 1280px) {
+  .menu-container {
+    z-index: 1;
+  }
   .menu-container .burger--btn-close {
     display: none;
   }
@@ -905,6 +908,7 @@ a {
     display: flex;
     margin: -2px -17px;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .nav-list__item {
     padding: 2px 17px;
@@ -915,27 +919,28 @@ a {
     line-height: 1.3125;
     color: #ffffff;
     text-decoration: none;
+    transition: color 0.25s linear;
   }
   .nav-list__link.is--current {
     color: #d41443;
   }
-}
-.burger {
-  z-index: 2;
-}
-@media screen and (min-width: 1280px) {
-  .burger {
-    display: none;
+  .nav-list__link:hover, .nav-list__link:focus {
+    color: #d41443;
   }
 }
-
 .burger--btn {
+  z-index: 2;
   width: 40px;
   height: 40px;
   cursor: pointer;
   display: flex;
   border: none;
   background-color: transparent;
+}
+@media screen and (min-width: 1280px) {
+  .burger--btn {
+    display: none;
+  }
 }
 .burger--btn-close {
   margin-top: 10px;
@@ -985,21 +990,16 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 30px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
   .header__btn-thd {
     display: none;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .header__btn-thd {
-    margin-right: 18px;
+    margin-left: 30px;
   }
-}
-.header__btn-thd:hover {
-  background-color: #ecebeb;
 }
 
 .header__btn::after,
@@ -1073,7 +1073,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   .overlay__sector-one {
-    position: absolute;
+    position: relative;
     top: 137px;
     z-index: 2;
   }
@@ -1101,7 +1101,7 @@ a {
 }
 @media screen and (min-width: 1280px) {
   .overlay__sector-two {
-    padding-top: 60px;
+    padding-top: 66px;
   }
 }
 
@@ -1244,7 +1244,6 @@ a {
 }
 
 .header__box-title {
-  z-index: 2;
   font-family: Titan One, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -1314,19 +1313,20 @@ a {
 }
 .header__box-list {
   display: flex;
-  margin: 0 -4px;
+  flex-wrap: wrap;
+  margin: -2px -4px;
 }
 @media screen and (min-width: 1280px) {
   .header__box-list {
-    margin: 0 -7px;
+    margin: -5px -7px;
   }
 }
 .header__box-btn {
-  margin: 0 4px;
+  margin: 2px 4px;
 }
 @media screen and (min-width: 1280px) {
   .header__box-btn {
-    padding: 0 7px;
+    padding: -5px 7px;
   }
 }
 
@@ -1346,49 +1346,33 @@ a {
   position: absolute;
   overflow: hidden;
   z-index: 0;
-  min-width: 100%;
 }
 @media screen and (max-width: 767px) {
   .header__main-img {
-    top: 27px;
-    left: 36px;
+    top: 52px;
+    left: 80px;
+    width: 346px;
   }
 }
 @media screen and (min-width: 768px) {
   .header__main-img {
     top: -56px;
-    left: 304px;
+    width: 323px;
+    right: 142px;
   }
 }
 @media screen and (min-width: 1280px) {
   .header__main-img {
     top: -35px;
-    left: 475px;
+    width: 538px;
+    right: 267px;
   }
 }
 
 .header__png {
   object-fit: contain;
-}
-@media screen and (max-width: 767px) {
-  .header__png {
-    height: 419px;
-    min-width: 367px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header__png {
-    height: 368px;
-    min-width: 324px;
-    width: auto;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .header__png {
-    height: 613px;
-    min-width: 538px;
-    width: auto;
-  }
+  width: 100%;
+  height: 100%;
 }
 
 .header__pretty-img {
@@ -2036,19 +2020,20 @@ a {
 }
 @media screen and (min-width: 768px) {
   .social__list-item {
-    margin-right: 31px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .social__list-item {
     margin-right: 30px;
   }
 }
-.social__list-item .footer__link {
+
+.footer__link {
   display: block;
   width: 32px;
   height: 32px;
-  transition: 350ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@media screen and (min-width: 768px) {
+  .footer__link {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .footer__link:hover .social__icon,
@@ -2061,6 +2046,7 @@ a {
   fill: #ffb8ca;
   width: 32px;
   height: 32px;
+  transition: 350ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 @media screen and (min-width: 768px) {
   .social__icon {
@@ -2068,6 +2054,17 @@ a {
     height: 34px;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 1280px) {
+  .social__icon {
+    margin-right: 31px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1280px) {
+  .social__icon {
+    margin-right: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer__bottom {
     display: flex;
