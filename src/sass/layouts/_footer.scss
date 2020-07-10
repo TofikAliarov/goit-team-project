@@ -296,6 +296,7 @@ justify-content: center;}
 
 
 .footer__btn-locations {
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -313,12 +314,14 @@ justify-content: center;}
         background-position: center;
     }
         @media screen and (min-width: 768px) {
+margin-bottom: 0px;
             margin-right: 14.5px;
         width: 191px;
     height: 44px;}
             @media screen and (min-width: 1280px){
                 width: 180px;
                 height: 44px;
+                margin-bottom: 0px;
             }
   
 }
