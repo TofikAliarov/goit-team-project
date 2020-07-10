@@ -5,7 +5,6 @@
 }
 
 .products__title {
-	margin-bottom: 144px;
 	@include large-text($color: #ffa5ba, $font-size: 18px, $letter-spacing: 0, $line-height: 1.16);
 
 	&-part {
@@ -31,6 +30,7 @@
 }
 
 .list {
+	padding-top: 144px;
 	&__item-picture {
 		position: absolute;
 		top: 0;
@@ -78,7 +78,6 @@
 	}
 
 	.products__title {
-		margin-bottom: 150px;
 		@include font-line(26px, 30px);
 		&-part {
 			@include font-line(48px, 55px);
@@ -94,6 +93,7 @@
 
 	.list {
 		display: flex;
+		padding-top: 150px;
 		&__item-picture {
 			width: 220px;
 		}
@@ -104,14 +104,13 @@
 	}
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
 	.container.products {
 		padding-top: 127px;
 		padding-bottom: 119px;
 	}
 
 	.products__title {
-		margin-bottom: 259px;
 		@include font-line(30px, 34px);
 		&-part {
 			@include font-line(58px, 66px);
@@ -126,6 +125,7 @@
 	}
 
 	.list {
+		padding-top: 259px;
 		&__item-picture {
 			width: 335px;
 			transform: translate(-50%, -62%);
