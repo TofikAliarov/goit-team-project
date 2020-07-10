@@ -1,110 +1,110 @@
 .container.products {
-    padding-top: 120px;
-    padding-bottom: 98px;
-    text-align: center;
+	padding-top: 120px;
+	padding-bottom: 98px;
+	text-align: center;
 }
 
 .list__item {
-    position: relative;
-    border-radius: 24px;
-    padding: 160px 40px 40px 40px;
-    &:nth-last-of-type(3) {
-        background-color: $pink;
-    }
-    &:nth-last-of-type(2) {
-        background-color: $sand;
-    }
-    &:nth-last-of-type(1) {
-        background-color: $green;
-    }
+	position: relative;
+	border-radius: 24px;
+	padding: 160px 40px 40px 40px;
+	&:nth-last-of-type(3) {
+		background-color: $pink;
+	}
+	&:nth-last-of-type(2) {
+		background-color: $sand;
+	}
+	&:nth-last-of-type(1) {
+		background-color: $green;
+	}
 }
 
 .list {
-    padding-top: 144px;
-    &__item-picture {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -45%);
-        width: 249px;
-    }
-    &__item-title {
-        @include font-line(20px, 23px);
-        color: $white;
-        letter-spacing: 0.04em;
-        font-family: $title-font;
-        font-weight: 400;
-        margin-bottom: 30px;
-    }
-    &__item-ellipsis {
-        margin-bottom: 30px;
-    }
-    &__item-text {
-        @include font-line(14px, 21px);
-        color: $white;
-        letter-spacing: 0.04em;
-        margin-bottom: 30px;
-    }
+	padding-top: 144px;
+	&__item-box {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -45%);
+		width: 249px;
+	}
+	&__item-title {
+		@include font-line(20px, 23px);
+		color: $white;
+		letter-spacing: 0.04em;
+		font-family: $title-font;
+		font-weight: 400;
+		margin-bottom: 30px;
+	}
+	&__item-ellipsis {
+		margin-bottom: 30px;
+	}
+	&__item-text {
+		@include font-line(14px, 21px);
+		color: $white;
+		letter-spacing: 0.04em;
+		margin-bottom: 30px;
+	}
 }
 
 .item-link__icon {
-    @include sexy-border(transparent, 1px);
-    border-radius: 50px;
+	@include sexy-border(transparent, 1px);
+	border-radius: 50px;
 }
 
 @media screen and (max-width: 767px) {
-    .list__item+.list__item {
-        margin-top: 130px;
-    }
+	.list__item + .list__item {
+		margin-top: 130px;
+	}
 }
 
 @media screen and (min-width: 768px) {
-    .container.products {
-        padding-top: 122px;
-        padding-bottom: 112px;
-    }
-    .list__item {
-        padding: 152px 10px 40px 10px;
-        &+& {
-            margin-left: 10px;
-        }
-    }
-    .list {
-        display: flex;
-        padding-top: 150px;
-        &__item-picture {
-            width: 220px;
-        }
-        &__item-text {
-            @include font-line(14px, 25px);
-            margin-bottom: 40px;
-        }
-    }
+	.container.products {
+		padding-top: 122px;
+		padding-bottom: 112px;
+	}
+	.list__item {
+		padding: 152px 10px 40px 10px;
+		& + & {
+			margin-left: 10px;
+		}
+	}
+	.list {
+		display: flex;
+		padding-top: 150px;
+		&__item-box {
+			width: 220px;
+		}
+		&__item-text {
+			@include font-line(14px, 25px);
+			margin-bottom: 40px;
+		}
+	}
 }
 
 @media screen and (min-width: 1280px) {
-    .container.products {
-        padding-top: 127px;
-        padding-bottom: 119px;
-    }
-    .list__item {
-        padding: 163px 44px 50px 44px;
-        &+& {
-            margin-left: 30px;
-        }
-    }
-    .list {
-        padding-top: 259px;
-        &__item-picture {
-            width: 335px;
-            transform: translate(-50%, -62%);
-        }
-        &__item-title {
-            @include font-line(30px, 34px);
-        }
-        &__item-text {
-            @include font-line(16px, 28px);
-            margin-bottom: 62px;
-        }
-    }
+	.container.products {
+		padding-top: 127px;
+		padding-bottom: 119px;
+	}
+	.list__item {
+		padding: 163px 44px 50px 44px;
+		& + & {
+			margin-left: 30px;
+		}
+	}
+	.list {
+		padding-top: 259px;
+		&__item-box {
+			width: 335px;
+			transform: translate(-50%, -62%);
+		}
+		&__item-title {
+			@include font-line(30px, 34px);
+		}
+		&__item-text {
+			@include font-line(16px, 28px);
+			margin-bottom: 62px;
+		}
+	}
 }
