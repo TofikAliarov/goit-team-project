@@ -8,7 +8,7 @@
 	margin-bottom: 144px;
 	@include large-text($color: #ffa5ba, $font-size: 18px, $letter-spacing: 0, $line-height: 1.16);
 
-	& .products__title-part {
+	&-part {
 		@include large-text($color: $red, $font-size: 34px, $letter-spacing: 0.04em, $line-height: 1.14);
 		display: block;
 		margin-top: 15px;
@@ -58,14 +58,11 @@
 		letter-spacing: 0.04em;
 		margin-bottom: 30px;
 	}
+}
 
-	&__item-btn {
-		width: 42px;
-		height: 42px;
-		@include sexy-border(transparent, 1px);
-		border-radius: 50px;
-		padding: 0;
-	}
+.item-link__icon {
+	@include sexy-border(transparent, 1px);
+	border-radius: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -83,7 +80,7 @@
 	.products__title {
 		margin-bottom: 150px;
 		@include font-line(26px, 30px);
-		& .products__title-part {
+		&-part {
 			@include font-line(48px, 55px);
 		}
 	}
@@ -116,7 +113,7 @@
 	.products__title {
 		margin-bottom: 259px;
 		@include font-line(30px, 34px);
-		& .products__title-part {
+		&-part {
 			@include font-line(58px, 66px);
 		}
 	}
