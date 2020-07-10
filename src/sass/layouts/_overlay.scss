@@ -44,7 +44,7 @@
     padding-top: 43px;
 
     @media screen and (min-width: 1280px) {
-        padding-top: 70px;
+        padding-top: 60px;
     }
 
 }
@@ -91,13 +91,13 @@
         @media screen and (min-width: 768px) {
             width: 124px;
             height: 126px;
-            padding-bottom: 28px;
+            // padding-bottom: 28px;
         }
 
         @media screen and (min-width: 1280px) {
             width: 188px;
             height: 191px;
-            padding-bottom: 45px;
+            // padding-bottom: 45px;
         }
 
     }
@@ -137,7 +137,7 @@
 
 .header__box-title {
     z-index: 2;
-    display: inline-block;
+    // display: inline-block;
     font-family: $title-font;
     font-weight: 400;
     text-transform: uppercase;
@@ -172,14 +172,14 @@
     @media screen and (min-width: 768px) {
         max-width: 162px;
         max-height: 124px;
-        padding-top: 3px;
+        margin-top: 3px;
     }
 
     @media screen and (min-width: 1280px) {
         max-width: 277px;
         max-height: 202px;
-        padding-left: 38px;
-        padding-top: 10px ;
+        margin-left: 38px;
+        margin-top: 10px ;
     }
 
 
@@ -187,11 +187,11 @@
         padding-top: 19px;
 
         @media screen and (min-width: 768px) {
-            padding-top: 20px;
+            padding-top: 10px;
         }
     
         @media screen and (min-width: 1280px) {
-            padding-top: 25px;
+            padding-top: 18px;
         }
     }
     &-list {
