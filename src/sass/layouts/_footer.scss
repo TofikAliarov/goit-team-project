@@ -402,11 +402,24 @@
     @media screen and (min-width: 1280px) {
         margin-bottom: 50px;
     }
+.social__list-item {
+    margin-right: 28.24px;
+    &:last-child {margin-right: 0px;}
+    @media screen and (min-width: 768px) {
+        margin-right: 31px;
+      }
+      @media screen and (min-width: 1280px) {
+        margin-right: 30px;
 }
+.footer__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+    transition: 350ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-.social__link {
-    width: 34px;
-    height: 34px;
+  
+
+  }
 }
 
 .footer__link:hover .social__icon,
@@ -419,18 +432,16 @@
     fill: $pink;
     width: 32px;
     height: 32px;
-    margin-right: 28.24px;
-    & :last-child {
-        margin-right: 0px;
-        transition: 350ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    @media screen and (min-width: 1280px) {
+    
+   
+    @media screen and (min-width: 768px) {
         width: 34px;
         height: 34px;
-        margin-right: 30px;
-        @media screen and (min-width: 1280px) {
-            margin-right: 31px;
-        }
+     
+        
+    @media screen and (min-width: 1280px) {
+
+       
     }
 }
 
