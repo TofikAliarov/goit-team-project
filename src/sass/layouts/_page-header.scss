@@ -3,9 +3,11 @@
 }
 
 .header-container {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     &.container {
       @media screen and (max-width: 767px) {
         padding-top: 6px;
@@ -20,6 +22,7 @@
         padding-right: 97px;
       }
     }
+
 }
 
 .logo__link{
@@ -50,15 +53,17 @@
           height: 1020px;
         }
     }
+
 }
 
 .menu-container.is-open {
-    opacity: 1;
-    transition: opacity 0.5s linear;
-    pointer-events: visible;
+	opacity: 1;
+	transition: opacity 0.5s linear;
+	pointer-events: visible;
 }
 
 @media screen and (min-width: 1280px) {
+
     .menu-container {
       z-index: 1;
       .burger--btn-close {
@@ -143,42 +148,43 @@
         }
 
     }
+
 }
 
 .header__btn::after,
 .header__btn-thd::after {
-    content: "";
-    background-image: url(../images/btn-icon.svg);
-    display: block;
-    margin-left: 16px;
-    height: 10px;
-    width: 8px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+	content: "";
+	background-image: url(../images/btn-icon.svg);
+	display: block;
+	margin-left: 16px;
+	height: 10px;
+	width: 8px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 @media screen and (max-width: 1279px) {
-    .nav-list {
-        margin-top: 19px;
-        &__item {
-            padding: 20px 0;
-            border-top: 1px solid $border;
-            border-bottom: 1px solid $border;
-            @media screen and (min-width: 768px) {
-                padding: 11px 0;
-            }
-        }
-        &__link {
-            padding: 0 30px;
-            font-family: $main-font;
-            @include font-line(20px, 26px);
-            color: $white;
-            font-weight: 700;
-            text-decoration: none;
-            @media screen and (min-width: 768px) {
-                @include font-line(20px, 26px);
-            }
-        }
-    }
+	.nav-list {
+		margin-top: 19px;
+		&__item {
+			padding: 20px 0;
+			border-top: 1px solid $border;
+			border-bottom: 1px solid $border;
+			@media screen and (min-width: 768px) {
+				padding: 11px 0;
+			}
+		}
+		&__link {
+			padding: 0 30px;
+			font-family: $main-font;
+			@include font-line(20px, 26px);
+			color: $white;
+			font-weight: 700;
+			text-decoration: none;
+			@media screen and (min-width: 768px) {
+				@include font-line(20px, 26px);
+			}
+		}
+	}
 }

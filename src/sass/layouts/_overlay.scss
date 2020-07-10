@@ -1,4 +1,5 @@
 .layout-overlay {
+
     height: 446px;
     
     @media screen and (min-width: 768px) {
@@ -11,12 +12,14 @@
 
 .overlay.container {
 
-    @media screen and (min-width: 1280px) {
-    padding: 0 77px;
-    }
+
+	@media screen and (min-width: 1280px) {
+		padding: 0 77px;
+	}
 }
 
 .overlay__sector-one {
+
     @media screen and (max-width: 767px) {
         position: relative;
         top: 137px;
@@ -33,9 +36,11 @@
     @media screen and (min-width: 1280px) {
         padding-top: 74px;
     }
+
 }
 
 .overlay__sector-two {
+
     @media screen and (max-width: 767px) {
         display: none;
     }
@@ -50,22 +55,32 @@
 }
 
 .header__btn-first {
-    @include btn(62px, 24px, $white, $red, 400, 8px, 10px);
+	@include btn(62px, 24px, $white, $red, 400, 8px, 10px);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: 1280px) {
-        @include btn(104px, 40px, $white, $red, 400, 14px, 18px);
-    }
+	&:hover {
+		background-color: $red-hover;
+	}
+
+	@media screen and (min-width: 1280px) {
+		@include btn(104px, 40px, $white, $red, 400, 14px, 18px);
+	}
 }
 
 .header__btn-second {
-    @include btn(83px, 24px, $red, $white, 400, 8px, 10px);
+	@include btn(83px, 24px, $red, $white, 400, 8px, 10px);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover {
+		background-color: $grey-hover;
+	}
 
-    @media screen and (min-width: 1280px) {
-        @include btn(138px, 40px, $red, $white, 400, 14px, 18px);
-    }
+	@media screen and (min-width: 1280px) {
+		@include btn(138px, 40px, $red, $white, 400, 14px, 18px);
+	}
 }
 
 .header__block {
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,10 +147,11 @@
             margin-top: 9px;
         }
     }
+
 }
 
-
 .header__box-title {
+
     font-family: $title-font;
     font-weight: 400;
     text-transform: uppercase;
@@ -209,20 +225,20 @@
         }
 
     }
+
 }
 
 .header__count-img {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-    display: block;
-    width: 33px;
-    height: 32px;
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+	display: block;
+	width: 33px;
+	height: 32px;
 }
 
-
-
 .header__main-img {
+
     pointer-events: none;
 
     position: absolute;
@@ -251,12 +267,15 @@
 }
 
 .header__png {
+
     object-fit: contain;
     width: 100%;
     height: 100%;
+
 }
 
 .header__pretty-img {
+
     z-index: 1;
 
     @media screen and (min-width: 768px) {
@@ -269,79 +288,77 @@
         min-width: 293px;
         width: auto;
     }
+
 }
 
 @media screen and (min-width: 1280px) {
-    .menu {
-        z-index: 2;
-    }
+	.menu {
+		z-index: 2;
+	}
 }
 
 .count {
+	&__list {
+		margin: -7px 0;
 
-    &__list {
-        margin: -7px 0;
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
 
-        @media screen and (max-width: 767px) {
-            display: none;
-        }
-    }
+	&__item {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		z-index: 0;
+		padding: 7px 0;
+	}
 
-    &__item {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        z-index: 0;
-        padding: 7px 0;
-    }
+	&__numb {
+		display: inline-block;
+		margin: 0 0;
+		padding: 0 0;
+		font-family: $title-font;
+		@include font-line(28px, 32px);
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: $red;
 
-    &__numb {
-        display: inline-block;
-        margin: 0 0;
-        padding: 0 0;
-        font-family: $title-font;
-        @include font-line(28px, 32px);
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: $red;
+		@media screen and (min-width: 1280px) {
+			@include font-line(43px, 53px);
+		}
+	}
 
-        @media screen and (min-width: 1280px) {
-            @include font-line(43px, 53px);
-        }
+	&__txt {
+		display: inline-block;
+		margin: 0 0;
+		padding: 0 0;
+		font-family: $main-font;
+		@include font-line(8px, 10px);
+		text-align: right;
+		color: $white;
 
-    
-    }
-
-    &__txt {
-        display: inline-block;
-        margin: 0 0;
-        padding: 0 0;
-        font-family: $main-font;
-        @include font-line(8px, 10px);
-        text-align: right;
-        color: $white;
-
-        @media screen and (min-width: 1280px) {
-            @include font-line(14px, 18px);
-        }
-    }
+		@media screen and (min-width: 1280px) {
+			@include font-line(14px, 18px);
+		}
+	}
 }
 
-.count__item::before{
-    content: "";
-    position: absolute;
-    display: block;
-    width: 16px;
-    height: 16px;
-    border-radius: 50px;
-    background-color: $white;
-    top: 5px;
-    left: 25px;
-    z-index: -1;
-    @media screen and (min-width: 1280px) {
-        width: 30px;
-        height: 30px;
-        top: 3px;
-        left: 40px;
-    }
+.count__item::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50px;
+	background-color: $white;
+	top: 5px;
+	left: 25px;
+	z-index: -1;
+	@media screen and (min-width: 1280px) {
+		width: 30px;
+		height: 30px;
+		top: 3px;
+		left: 40px;
+	}
 }
