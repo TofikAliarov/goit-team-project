@@ -1,6 +1,6 @@
 .layout-overlay {
     height: 446px;
-
+    
     @media screen and (min-width: 768px) {
         height: 312px;
     }
@@ -10,7 +10,6 @@
 }
 
 .overlay.container {
-    position: relative;
 
     @media screen and (min-width: 1280px) {
     padding: 0 77px;
@@ -229,7 +228,7 @@
 
     position: absolute;
     overflow: hidden;
-    z-index: 1;
+    z-index: 0;
     min-width: 100%;
 
     @media screen and (max-width: 767px) {
@@ -269,7 +268,7 @@
 }
 
 .header__pretty-img {
-    z-index: 2;
+    z-index: 1;
 
     @media screen and (min-width: 768px) {
         height: 133px;
