@@ -343,6 +343,7 @@
     @media screen and (min-width: 768px) {
         @include large-text ($color: $red, $font-size: 48px, $letter-spacing: 0.06em, $line-height: 1.15);
         margin-bottom: 0px;
+        white-space: pre-line;
     }
     @media screen and (min-width: 1280px) {
         @include large-text ($color: $red, $font-size: 58px, $letter-spacing: 0.06em, $line-height: 1.13);
@@ -397,6 +398,7 @@
 
 .social__list {
     display: flex;
+    justify-content: flex-end;
     margin-left: 147px;
     margin-bottom: 46px;
     @media screen and (min-width: 1280px) {
