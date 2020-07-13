@@ -64,12 +64,13 @@
 		padding-bottom: 112px;
 	}
 	.list__item {
+		width: calc((100% - 30px) / 3);
+		margin: 5px;
 		padding: 152px 10px 40px 10px;
-		& + & {
-			margin-left: 10px;
-		}
 	}
 	.list {
+		flex-wrap: wrap;
+		margin: -5px;
 		display: flex;
 		padding-top: 150px;
 		&__item-box {
@@ -88,12 +89,13 @@
 		padding-bottom: 119px;
 	}
 	.list__item {
+		width: calc((100% - 90px) / 3);
+		margin: 15px;
 		padding: 163px 44px 50px 44px;
-		& + & {
-			margin-left: 30px;
-		}
 	}
 	.list {
+		flex-wrap: wrap;
+		margin: -15px;
 		padding-top: 259px;
 		&__item-box {
 			width: 335px;
