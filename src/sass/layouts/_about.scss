@@ -1,5 +1,8 @@
 .layout-about {
     background-image: url(../images/info-bcg.png);
+    @media screen and (min-device-pixel-ratio: 2) {
+        background-image: url(../images/info-bcg@2x.png);
+    }
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -8,8 +11,9 @@
     }
     @media screen and (min-width: 1280px) {
         background-image: url(../images/info-bcg.png);
-        background-position: center;
-        background-repeat: no-repeat;
+        @media screen and (min-device-pixel-ratio: 2) {
+            background-image: url(../images/info-bcg@2x.png);
+        }
     }
 }
 
