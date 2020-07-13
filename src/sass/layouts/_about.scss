@@ -1,10 +1,15 @@
-.description__text-bg {
+.layout-about {
     background-image: url(../images/info-bcg.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     @media screen and (min-width: 768px) {
         background-image: none;
+    }
+    @media screen and (min-width: 1280px) {
+        background-image: url(../images/info-bcg.png);
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
@@ -117,12 +122,4 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.layout-about {
-    @media screen and (min-width: 1280px) {
-        background-image: url(../images/info-bcg.png);
-        background-position: center;
-        background-repeat: no-repeat;
-    }
 }
