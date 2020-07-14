@@ -179,6 +179,11 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (min-device-pixel-ratio: 2) {
+  .layout-about {
+    background-image: url(/info-bcg@2x.c95be014.png);
+  }
+}
 @media screen and (min-width: 768px) {
   .layout-about {
     background-image: none;
@@ -187,8 +192,11 @@ a {
 @media screen and (min-width: 1280px) {
   .layout-about {
     background-image: url(/info-bcg.eeba1f5a.png);
-    background-position: center;
-    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2) {
+  .layout-about {
+    background-image: url(/info-bcg@2x.c95be014.png);
   }
 }
 
@@ -2026,7 +2034,6 @@ a {
 }
 
 .social__list {
-  margin-right: -28.24px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -2047,6 +2054,10 @@ a {
   .social__list-item {
     margin-right: 30px;
   }
+}
+
+.social__list-item:last-child {
+  margin-right: 0;
 }
 
 .footer__link {
